@@ -1,0 +1,35 @@
+-------------------------- variables --------------------------
+
+name: grana
+value : 0
+
+-------------------------- daily --------------------------
+
+$title[👾__daily__]
+$description[<@$authorID> **você coletou seu bônus e ganhou `$random[8000;13000]` bitcoins**]
+$addReactions[💸]
+$setUserVar[grana;$sum[$getUserVar[grana];$random[8000;13000]]]
+$color[000000]
+$footer[daily de $username]
+$serverCooldown[12h;⚠️**vc tá no cooldown falta ⏳`%time%`⏳ pra reiniciar**⚠️]
+
+-------------------------- rank --------------------------
+
+$title[🏅 Grana em mãos 🏅]
+$color[#1E90FF]
+$description[
+🥇 $getLeaderboardValue[user;grana;asc;1]
+🥈 $getLeaderboardValue[user;grana;asc;2]
+🥉 $getLeaderboardValue[user;grana;asc;3]
+4º $getLeaderboardValue[user;grana;asc;4]
+5º $getLeaderboardValue[user;grana;asc;5]
+6º $getLeaderboardValue[user;grana;asc;6]
+7º $getLeaderboardValue[user;grana;asc;7]
+8º $getLeaderboardValue[user;grana;asc;8]
+9º $getLeaderboardValue[user;grana;asc;9]
+10º $getLeaderboardValue[user;grana;asc;10]
+] 
+
+-------------------------- <@ID DO SEU BOT>--------------------------
+
+<@$authorID> MEU PREFIXO E `PREFIXO DO SEU BOT`mim
