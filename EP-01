@@ -1,0 +1,22 @@
+------------------ping------------------
+
+$nomention
+$botTyping
+$color[$random[000000;99999]]
+$description[💥 meu ping e `$ping`]
+$title[pong¿?]
+$footer[por: $username]
+
+------------------say------------------
+
+$nomention
+$onlyAdmin[😺|so adm meu amigo!]
+$message
+
+por: <@$authorID>
+
+---------------hellow------------------
+
+$nomention
+$botTyping
+olá! <@$authorID>
